@@ -9,6 +9,7 @@ A simple MIPS-like CPU written in SystemVerilog.
 - Big-endian
 - Byte addressing
 - 256 bytes of memory
+- Multi cycle
 
 
 ![Arch overview](desc.png)
@@ -45,7 +46,9 @@ __For a better explanation on instructions and what every thing means, have a lo
 | rte***            | 0x10   | 0x0   | 0x10  | PC ← EPC (exception return) |
 
 `*Those won't overflow`
+
 `**Those ones perform a sign extend`
+
 `***Not properly implemented`
 
 
@@ -69,6 +72,7 @@ __For a better explanation on instructions and what every thing means, have a lo
 | sxori rt, rs, imm    | 0xE    | Imm               | rt ← rs ^ imm *                   |
 
 `*Imm value should be extended to 32 bits, while also extending it's signal bit (MSB).`
+
 `**address value should be added to the value of rs for the end memory address where data should be written into or read from.`
 
 ##### Conditional branches
