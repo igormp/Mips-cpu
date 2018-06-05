@@ -21,7 +21,8 @@ A simple MIPS-like CPU written in SystemVerilog.
 
 
 **Please note that it currently lacks proper multiplication, division and exception handling.**
-__For a better explanation on instructions and what every thing means, have a look [here](https://en.wikibooks.org/wiki/MIPS_Assembly/MIPS_Details)__
+
+*For a better explanation on instructions and what every thing means, have a look [here](https://en.wikibooks.org/wiki/MIPS_Assembly/MIPS_Details)*
 
 
 #### Type R instructions
